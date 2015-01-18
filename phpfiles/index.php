@@ -8,13 +8,12 @@ ini_set('max_execution_time', 0);
 session_start();
 
 
-//define arduino serial port consant
-define("PORT","/dev/ttyUSB0");
+
 
 //Replace username and password with personal gmail 
 $hostname = '{imap.gmail.com:993/imap/ssl}INBOX';
-$username = 'mail@gmail.com';
-$password = 'pass';
+$username = 'compilatori1415@gmail.com';
+$password = 'comp1415';
 
 $mbox = imap_open($hostname, $username, $password) or die('Cannot connect to Gmail: ' . imap_last_error());
 
@@ -53,7 +52,7 @@ imap_close($inbox);
 //echo "<br>SESSION DATA ".$_SESSION["oldData"]."<br>";
 //echo "<br>OLDDATA".$oldData."<br>";
 //echo "<br>LASTDATA".$lastData."<br>"; 
-
+$oldData="2";
 
 //IF THERE IS A NEW EMAIL I SEND NOTIFICATION TO ARDUINO
 if($lastData != $oldData ){
@@ -64,7 +63,8 @@ if($lastData != $oldData ){
 	
 	error_reporting(E_ALL);
 	ini_set("display_errors", 0);
-	
+	//define arduino serial port consant
+	define("PORT","/dev/ttyUSB0");
 	
 
 	$max = 80;
@@ -73,6 +73,7 @@ if($lastData != $oldData ){
 	if((strlen($str) % $max) > 0) $n_parts++;
 	
 	sendToArduino($nMails." - ".$n_parts);
+	echo "qui";
 	for($i = 0; $i < $n_parts; $i++) {
 	
     		if($i != $n_parts - 1)
@@ -98,6 +99,7 @@ else
 function sendToArduino($toSend){
 	echo "<br>TOSEND: ".$toSend." partlen: ".strlen($toSend)."<br>";
     	
+
     	$serial = new phpSerial;
 	$serial->deviceSet(PORT);
 	$serial->confBaudRate(9600);
