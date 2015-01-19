@@ -1,5 +1,5 @@
 <?php 
-include "./serial/php_serial.class.php";
+include "php_serial.class.php";
 
 //Set max execution time infinite
 ini_set('max_execution_time', 0);
@@ -38,21 +38,25 @@ for($i = $count; $i >= 1; $i--) {
    	 foreach ($from as $id => $object) {
         	$fromname = $object->personal;
     	}
-	$email = "From: ".$fromname." - Subject: ".$header->subject." == ";
-        $str.= $email; //Add every email
-	$nMails++;
+	$email = "F: ".$fromname." - S: ".$header->subject." = ";
+	if(strlen($str) + strlen($email) <= 320){
+		$str.= $email; //Add every email
+		
+	}
+$nMails++;
+	
     }
 }
 
 imap_close($inbox);
 
 
-//echo $str;
+//echo "  ----- " .$str;
 
 //echo "<br>SESSION DATA ".$_SESSION["oldData"]."<br>";
 //echo "<br>OLDDATA".$oldData."<br>";
 //echo "<br>LASTDATA".$lastData."<br>"; 
-$oldData="2";
+//$oldData="2";
 
 //IF THERE IS A NEW EMAIL I SEND NOTIFICATION TO ARDUINO
 if($lastData != $oldData ){
@@ -67,7 +71,7 @@ if($lastData != $oldData ){
 	define("PORT","/dev/ttyUSB0");
 	
 
-	$max = 80;
+	$max = 320;
 
 	$n_parts = (int)(strlen($str) / $max);
 	if((strlen($str) % $max) > 0) $n_parts++;
@@ -119,7 +123,7 @@ function sendToArduino($toSend){
 //Refresh script every $sec second for check new emails
 
 $page = $_SERVER['PHP_SELF'];
-$sec = "60";
+$sec = "120";
 header("Refresh: $sec; url=$page");
 
 
