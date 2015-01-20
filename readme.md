@@ -1,6 +1,6 @@
 #GMAILDUINO (Gmail notifier with Php and Arduino)
 
-##What is GmailDuino 
+#What is GmailDuino 
 GmailDuino is a project created by students of Computer Science Department (University of Catania). It is a Gmail Notifier that used and Arduino UNO (http://www.arduino.cc/) with a LCD Display, conjointly a Buzzer and a RGB Led, for notify when a new email is arrived, and allow to read sender and subject too.
 Notifications are sent by php server (index.php) every 120 second (settable).
 Good fun!
@@ -9,7 +9,7 @@ Good fun!
 
 
 
-##Installation and configuration
+#Installation and configuration
 
 ###PHP Configuration
 For execute php script you need a web server installed ( we recommend using Linux machine with Apache web server installed) and php installed inside.
