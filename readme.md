@@ -52,10 +52,11 @@ Plug your Arduino (we used Arduino Uno but is indifferent), and load file lcdpri
 
 
 
-#Start
+##Start
 Open index.php with your browser and leave open the page (if isn't open the php can't read from your gmail account).
 
-###Credits 
+
+#Credits 
 Have participated at project (Alphabetical Order):
 
 - Cantarella Danilo (http://cantarelladanilo.com)
