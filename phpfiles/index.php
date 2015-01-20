@@ -12,8 +12,8 @@ session_start();
 
 //Replace username and password with personal gmail 
 $hostname = '{imap.gmail.com:993/imap/ssl}INBOX';
-$username = 'compilatori1415@gmail.com';
-$password = 'comp1415';
+$username = 'personalmail@gmail.com';
+$password = 'password';
 
 $mbox = imap_open($hostname, $username, $password) or die('Cannot connect to Gmail: ' . imap_last_error());
 
