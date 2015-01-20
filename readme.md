@@ -5,6 +5,8 @@ GmailDuino is a project created by students of Computer Science Department (Univ
 Notifications are sent by php server (index.php) every 120 second (settable).
 Good fun!
 
+[Video] http://youtube.com/url
+
 # ![logo](https://raw.githubusercontent.com/filirnd/gmailduino/master/imgs/real1.jpg)
 
 
@@ -48,6 +50,10 @@ Plug your Arduino (we used Arduino Uno but is indifferent), and load file lcdpri
 # ![logo](https://raw.githubusercontent.com/filirnd/gmailduino/master/imgs/circuit1.jpg)
 # ![logo](https://raw.githubusercontent.com/filirnd/gmailduino/master/imgs/circuit2.jpg)
 
+
+
+#Start
+Open index.php with your browser and leave open the page (if isn't open the php can't read from your gmail account).
 
 ###Credits 
 Have participated at project (Alphabetical Order):
