@@ -5,6 +5,10 @@ GmailDuino is a project created by students of Computer Science Department (Univ
 Notifications are sent by php server (index.php) every 120 second (settable).
 Good fun!
 
+# ![logo](https://raw.githubusercontent.com/filirnd/gmailduino/master/imgs/real1.jpg)
+
+
+
 ##Installation and configuration
 
 ###PHP Configuration
@@ -29,7 +33,7 @@ Lastly you add to your user and to server user the serial group (default is "dia
 	sudo su
 	usermod -g dialout username
 	groups username 
-	usermod -a -G dialout www-data 
+	usermod -a -G dialout www-data
 	groups www-data
 
 Note: replace username with your personal user, and www-data with your server user.
@@ -38,6 +42,11 @@ Note: replace username with your personal user, and www-data with your server us
 
 
 ###ARDUINO Configuration
+Plug your Arduino (we used Arduino Uno but is indifferent), and load file lcdprinter.ino.ino (arduino sketch/lcdprinter v0.2/) or Gmail_ino.ino /Gmail_ino/). Difference between two previus sketch are only different color led (RGB), piezo melody, and lcd led on/off.
+
+####Circuit diagram
+# ![logo](https://raw.githubusercontent.com/filirnd/gmailduino/master/imgs/circuit1.jpg)
+# ![logo](https://raw.githubusercontent.com/filirnd/gmailduino/master/imgs/circuit2.jpg)
 
 
 ###Credits 
