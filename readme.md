@@ -68,4 +68,3 @@ Have participated at project (Alphabetical Order):
 - Safarally Dario (http://dariosafarally.altervista.org);
 - Siragusa Sebastiano (http://sebastianosiragusa.altervista.org/)
 - Vindigni Federico (http://federicovindigni.altervista.org)
-- 
