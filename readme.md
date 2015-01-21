@@ -62,8 +62,10 @@ Have participated at project (Alphabetical Order):
 
 - Cantarella Danilo (http://cantarelladanilo.com)
 - Maccarrone Roberta (http://robertamaccarrone.altervista.org)
-- Parasiliti Parracello Cristina (http://cristinaparasiliti.altervista.org)
+- Parasiliti Parracello Cristina (http://parasiliticristina.altervista.org)
 - Randazzo Filippo (http://randazzofilippo.com);
+- Ramon Gago (http://ramongagocarrera.wix.com/spain)
 - Safarally Dario (http://dariosafarally.altervista.org);
 - Siragusa Sebastiano (http://sebastianosiragusa.altervista.org/)
-- Vindigni Federico ()
+- Vindigni Federico (http://federicovindigni.altervista.org)
+- 
