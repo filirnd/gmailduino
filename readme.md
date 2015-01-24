@@ -6,7 +6,7 @@ GmailDuino is a project created by students of Computer Science Department (Univ
 Notifications are sent by php server (index.php) every 120 second (settable).
 Good fun!
 
-[Video] http://youtube.com/url
+[Video] https://www.youtube.com/watch?v=qUakoKyNZys&feature=youtu.be
 
 # ![logo](https://raw.githubusercontent.com/filirnd/gmailduino/master/imgs/real1.jpg)
 
